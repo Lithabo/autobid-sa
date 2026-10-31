@@ -1,0 +1,9 @@
+
+# Protect AutoBid SA secrets
+.env
+.env.*
+!.env.example
+
+# Ignore dependencies in all project folders
+node_modules/
+dist/

@@ -1,0 +1,143 @@
+
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.84);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  max-height: 94vh;
+  overflow-y: auto;
+  position: relative;
+  background: linear-gradient(145deg, #152233, #080f18);
+  border: 1px solid rgba(246, 182, 78, 0.3);
+  border-radius: 20px;
+  padding: 35px;
+  color: #fff;
+  box-shadow: 0 25px 90px rgba(0, 0, 0, 0.65);
+}
+
+.auth-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #ffffff12;
+  color: white;
+  border: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.auth-logo {
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.auth-logo span {
+  color: #f6b64e;
+}
+
+.auth-eyebrow {
+  color: #f6b64e;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 800;
+  margin-top: 28px;
+}
+
+.auth-card h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.auth-description {
+  color: #b4c1d0;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.auth-card form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #d9e0e8;
+  font-size: 13px;
+}
+
+.auth-card form input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 9px;
+  border: 1px solid #ffffff2b;
+  background: #1c2938;
+  color: white;
+  outline: none;
+}
+
+.auth-card form input:focus {
+  border-color: #f6b64e;
+}
+
+.auth-card form input::placeholder {
+  color: #8897a9;
+}
+
+.auth-error {
+  color: #ff8c8c;
+  font-size: 13px;
+}
+
+.auth-submit {
+  padding: 16px;
+  border: 0;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #ffd079, #eea83c);
+  color: #111315;
+  font-weight: 800;
+  margin-top: 5px;
+}
+
+.auth-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.auth-switch {
+  text-align: center;
+  font-size: 13px;
+  color: #b4c1d0;
+  margin-top: 25px;
+}
+
+.auth-switch button {
+  background: none;
+  border: none;
+  color: #f6b64e;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .auth-card {
+    padding: 26px 20px;
+  }
+}
